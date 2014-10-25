@@ -1,0 +1,111 @@
+---
+title       : Shiny A/B Split Tester
+subtitle    : Which creative is performing better?
+author      : (Use Keyboard to browse Slides)
+job         : 
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+
+## Shiny A/B Tester
+
+
+<script>
+ (function(d, t) {s
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.src = 'http://assets.gfycat.com/js/gfyajax-0.517d.js';
+    s.parentNode.insertBefore(g, s);
+}(document, 'script'));
+</script>
+
+<a href ="https://maximusdecimusmeridius.shinyapps.io/ABtest/">Shiny A/B Split Tester</a> is a simple tool for checking for statistical significance
+in performance difference.
+
+__Example:__ I've sent out 500 emails with headline A and 500 with headline B.
+50 people clicked headline A and 70 clicked on headling B. Can I expect headline B to perform better in general?
+<br><br>
+
+```r
+str(prop.test)
+```
+
+```
+## function (x, n, p = NULL, alternative = c("two.sided", "less", "greater"), 
+##     conf.level = 0.95, correct = TRUE)
+```
+<center>
+<img src="http://mojomedialabs.com/wp-content/uploads/2012/06/ab-testing1.png" height = "125" />
+</center>
+<br><br><br><br><br><br>
+
+
+--- .class #id 
+
+## Select Input
+First select input, slider or numerical. Default is slider, but if for larger numbers it will be easier to use numerical input
+if you want exact numbers.
+<center>
+<img class="gfyitem" data-id="ThatMealyAngora" />
+</center>
+
+```
+
+---
+
+## Set the sliders.
+For each creative, set the number of total actions and number of completed goals. The plot below will update in real time
+with conversion rate and confidence interval. The text will also let you know how certain you are of having a winner, as well
+as give you the upper and lower bounds for the 95% confidence interval for each creative's conversion rate.
+
+
+<center>
+<img class="gfyitem" data-id="JoyfulFluffyKitty" />
+</center>
+
+
+---
+
+## ...or enter the numerical input directly
+If you have larger numbers to input and want precice data you can enter them it directly in to the numerical fields.
+
+<center>
+<img class="gfyitem" data-id="DizzyRareHoatzin" />
+</center>
+
+
+---
+
+## You can change the default slider max...but beware
+
+The sliders has set to 100 max by default. This can be changed by entering a new value 
+in the "Slider Max" input field. Just remember that for larger values selecting precise values gets tricky.
+
+<center>
+<img class="gfyitem" data-id="AlarmingAgileInganue" />
+</center>
+
+
+---
+
+## Possible additions
+
+* Test more than 2 ads
+* Bulk/csv upload
+* Time partitioning
+* Projected time/sample size needed for significant results
+
+Thanks for checking it out! <br>
+
+
+<div style = >
+<center>
+<img src="http://i.dailymail.co.uk/i/pix/2009/07/26/article-1202220-05D17482000005DC-736_468x388.jpg" height = "300" border = "1" />
+</center>
+</div>
+

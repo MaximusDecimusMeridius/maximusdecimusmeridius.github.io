@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Shiny A/B Split Tester</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Shiny A/B Split Tester">
+  <meta name="author" content="(Use Keyboard to browse Slides)">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Shiny A/B Split Tester</h1>
+    <h2>Which creative is performing better?</h2>
+    <p>(Use Keyboard to browse Slides)<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Shiny A/B Tester</h2>
+  </hgroup>
+  <article data-timings="">
+    <script>
+ (function(d, t) {s
+    var g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.src = 'http://assets.gfycat.com/js/gfyajax-0.517d.js';
+    s.parentNode.insertBefore(g, s);
+}(document, 'script'));
+</script>
+
+<p><a href ="https://maximusdecimusmeridius.shinyapps.io/ABtest/">Shiny A/B Split Tester</a> is a simple tool for checking for statistical significance
+in performance difference.</p>
+
+<p><strong>Example:</strong> I&#39;ve sent out 500 emails with headline A and 500 with headline B.
+50 people clicked headline A and 70 clicked on headling B. Can I expect headline B to perform better in general?
+<br><br></p>
+
+<pre><code class="r">str(prop.test)
+</code></pre>
+
+<pre><code>## function (x, n, p = NULL, alternative = c(&quot;two.sided&quot;, &quot;less&quot;, &quot;greater&quot;), 
+##     conf.level = 0.95, correct = TRUE)
+</code></pre>
+
+<p><center>
+<img src="http://mojomedialabs.com/wp-content/uploads/2012/06/ab-testing1.png" height = "125" />
+</center>
+<br><br><br><br><br><br></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Select Input</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>First select input, slider or numerical. Default is slider, but if for larger numbers it will be easier to use numerical input
+if you want exact numbers.
+<center>
+<img class="gfyitem" data-id="ThatMealyAngora" />
+</center></p>
+
+<pre><code></code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Set the sliders.</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>For each creative, set the number of total actions and number of completed goals. The plot below will update in real time
+with conversion rate and confidence interval. The text will also let you know how certain you are of having a winner, as well
+as give you the upper and lower bounds for the 95% confidence interval for each creative&#39;s conversion rate.</p>
+
+<p><center>
+<img class="gfyitem" data-id="JoyfulFluffyKitty" />
+</center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>...or enter the numerical input directly</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>If you have larger numbers to input and want precice data you can enter them it directly in to the numerical fields.</p>
+
+<p><center>
+<img class="gfyitem" data-id="DizzyRareHoatzin" />
+</center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>You can change the default slider max...but beware</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>The sliders has set to 100 max by default. This can be changed by entering a new value 
+in the &quot;Slider Max&quot; input field. Just remember that for larger values selecting precise values gets tricky.</p>
+
+<p><center>
+<img class="gfyitem" data-id="AlarmingAgileInganue" />
+</center></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-6" style="background:;">
+  <hgroup>
+    <h2>Possible additions</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Test more than 2 ads</li>
+<li>Bulk/csv upload</li>
+<li>Time partitioning</li>
+<li>Projected time/sample size needed for significant results</li>
+</ul>
+
+<p>Thanks for checking it out! <br></p>
+
+<div style = >
+<center>
+<img src="http://i.dailymail.co.uk/i/pix/2009/07/26/article-1202220-05D17482000005DC-736_468x388.jpg" height = "300" border = "1" />
+</center>
+</div>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Shiny A/B Tester'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Select Input'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Set the sliders.'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='...or enter the numerical input directly'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='You can change the default slider max...but beware'>
+         5
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=6 title='Possible additions'>
+         6
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- MathJax: Fall back to local if CDN offline but local image fonts are not supported (saves >100MB) -->
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']],
+        processEscapes: true
+      }
+    });
+  </script>
+  <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <!-- <script src="https://c328740.ssl.cf1.rackcdn.com/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script> -->
+  <script>window.MathJax || document.write('<script type="text/x-mathjax-config">MathJax.Hub.Config({"HTML-CSS":{imageFont:null}});<\/script><script src="libraries/widgets/mathjax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"><\/script>')
+</script>
+<!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
